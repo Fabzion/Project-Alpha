@@ -2,3 +2,9 @@
   text-align: center;
   width: 100%;
 }
+
+/* for smooth scroll back to top of page */
+html{
+	scroll-behavior: smooth;
+	position: relative;
+}
