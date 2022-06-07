@@ -1,6 +1,7 @@
 .center{
 	margin: auto;
 	width: 50%;
+	text-align: center;
 }
 
 /* for smooth scroll back to top of page */
