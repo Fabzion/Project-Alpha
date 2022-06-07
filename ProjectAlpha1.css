@@ -1,6 +1,6 @@
 .center{
-  text-align: center;
-  width: 100%;
+	margin: auto;
+	width: 50%;
 }
 
 /* for smooth scroll back to top of page */
