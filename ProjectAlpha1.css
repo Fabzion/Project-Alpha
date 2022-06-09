@@ -14,6 +14,10 @@ html, body{
 	width: 50%;
 	text-align: center;
 }
+.discord-btn{ /* for the discord button in the main page */
+    	text-decoration: none;
+    	color: black;
+}
 .bt-left{ /* for the 'back to top' button, which is placed in the bottom left corner */
 	position:fixed;
 	bottom:2%;
@@ -21,12 +25,15 @@ html, body{
 	max-width: 100%;
 	height:auto;
 	float:left;
-	
+	border-radius: 0.8em;
+      	cursor: pointer;
+    	border: 1px solid #000;
 }
 button{
 	max-width: 100%;
 	height:auto;
 }
+
 
 /* also for a responsive layout -- */
 @media only screen and (max-device-width: 900px) {
