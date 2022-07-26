@@ -1,14 +1,62 @@
+:root{
+	--gutter:3rem;
+	--max-widthC:calc( 100% - var(--gutter) );
+}
+
+html{
+	height:100%;
+	width:100%;
+	overflow-x:hidden;
+}
+
+body{
+	margin:0;
+	min-width:100%;
+	height:auto;
+	font-size:1rem;
+}
+
 html, body{
 	scroll-behavior: smooth; /* for smooth scroll back to top of page */
 	position: relative;
-	height: auto; /* for a responsive layout -- */
-	width: 100%;
-	margin: 0;
-	overflow-x:hidden;
-	font-size: 100%;
-	max-width: 100vw;
-	min-height: 100vh;	/* ---*/
 }
+
+.container{
+	margin-left: var(--gutter);
+	margin-right: var(--gutter);
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	padding:1vmax 0;
+	text-align:center;
+	
+	position: fixed;
+	
+	max-width:calc(var(--max-width-calc) - 10rem);
+	width:75%;
+	max-height:calc(var(--max-width-calc) - 10rem);
+	height:auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	
+	box-sizing: border-box;
+}
+
+@media (max-width: 630px) { 
+	.container{
+		position:absolute;
+		min-width:100%;
+		height:100vh;
+		margin:0;
+		top:0px;
+		right:1vw;
+		bottom:0px;
+		left:1vw;
+		overflow-x: hidden;
+		border-width:0px;
+	}
+}
+
 .center{
 	margin: auto;
 	width: 50%;
@@ -35,20 +83,4 @@ button{
 }
 
 
-/* also for a responsive layout -- */
-@media only screen and (max-device-width: 900px) {
-	body{font-size: 1.2em;}
-	button{font-size:65%;}
-}
-@media only screen and (max-device-width: 700px) {
-	body{font-size: 1.4em;}
-	button{font-size:65%;}
-}
-@media only screen and (max-device-width: 500px) {
-	body{font-size: 1.5em;}
-	button{font-size:65%;}
-}
-@media only screen and (max-device-width: 400px) {
-	body{font-size: 1.6em;}
-	button{font-size:70%;}
-}
+
